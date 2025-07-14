@@ -1,5 +1,6 @@
 package step6;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /*
@@ -16,17 +17,8 @@ public class Main05 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		
-		String s = sc.next();
-		int idx =0;
-		int count = 0;
-		for(int i=0; i<s.length();i++) {
-			char c = s.charAt(i);
-				if(c == s.charAt(i)) count++;
-		
-			System.out.println(count);
-		}
-
+		String[] s = sc.next().toUpperCase().split("");
+		ArrayList<String> num = new ArrayList<>();
 
 	}
 }
