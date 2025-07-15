@@ -1,6 +1,8 @@
 package step6;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 /*
@@ -18,7 +20,9 @@ public class Main05 {
 		Scanner sc = new Scanner(System.in);
 		
 		String[] s = sc.next().toUpperCase().split("");
-		ArrayList<String> num = new ArrayList<>();
-
+		
+		//count
+		
+		System.out.println(s[0]);
 	}
 }
