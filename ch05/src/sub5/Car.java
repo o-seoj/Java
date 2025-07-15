@@ -1,4 +1,4 @@
-package sub4;
+package sub5;
 
 
 // 클래스 설계(정의)

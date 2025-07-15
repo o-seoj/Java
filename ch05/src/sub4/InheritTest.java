@@ -2,6 +2,7 @@ package sub4;
 /*
  * 날짜 : 2025/07/15
  * 이름 : 오서정
+ * 
  * 내용 : 상속(Inheritance) 실습하기
  */
 public class InheritTest {
@@ -9,14 +10,14 @@ public class InheritTest {
 		
 		// Car 상속 실습
 		Sedan sonata = new Sedan("소나타", "흰색", 0, 2000);
-		sonata.speedUP(80);
+		sonata.speedUp(80);
 		sonata.turbo();
 		sonata.speedDown(20);
 		sonata.show();
 		
 		Truck bongo = new Truck("봉고", "남색", 0, 0);
 		bongo.load(100);
-		bongo.speedUP(80);
+		bongo.speedUp(80);
 		bongo.speedDown(20);
 		bongo.show();
 		
