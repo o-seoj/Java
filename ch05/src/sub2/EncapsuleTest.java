@@ -62,5 +62,28 @@ public class EncapsuleTest {
 		// 은행명 수정 우리은행 -> 너희은행
 		wr.setBank("너희은행");
 		wr.show();
+		
+		Book book1 = new Book("삼국지","나관중","10001",10);
+		book1.show();
+		
+		boolean isOK = book1.borrowBook();
+		if(isOK) {
+			System.out.println(book1.getTitle()+"도서 대출 성공");
+		}else {
+			System.out.println(book1.getTitle()+"도서 대출 실패");			
+		}
+		book1.show();
+		
+		Book book2 = new Book("명품 Java","황기태","10002",1);
+		
+		boolean isOK1 = book2.borrowBook();
+		boolean isOK2 = book2.borrowBook();
+		
+		if(isOK2) {
+			System.out.println(book1.getTitle()+"도서 대출 성공");
+		}else {
+			System.out.println(book1.getTitle()+"도서 대출 실패");			
+		}
+		book2.show();
 	}
 }
