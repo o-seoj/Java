@@ -19,10 +19,33 @@ public class Main05 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		String[] s = sc.next().toUpperCase().split("");
+		String s = sc.next().toUpperCase();
 		
-		//count
+		int[] arr = new int[26];
+		// 입력 알파벳 카운트 배열
+		for(int i=0; i<s.length(); i++) {
+			arr[s.charAt(i)-'A']++;
+		}
+
+		// 카운트 최대값 찾기
+		int max =0;
+		for(int i=0; i<26;i++) {
+			max = Math.max(max, arr[i]);
+		}
 		
-		System.out.println(s[0]);
+		// 최대값 알파벳 찾기
+		char result = '?'; //최댓값 문자열 찾기(처음 찾은 문자를 최댓값)
+		boolean check = false;
+		for(int i=0; i<26;i++) {
+			if(arr[i]==max)
+				if(result=='?') {
+					result = (char)(i+'A');
+				} else{ //처음 찾은 최댓값 말고 또 찾으면 check를 true로 함으로써 중복된 값이 있다고 체크
+					check = true;
+				}
+		}
+		
+		if(check) System.out.println('?');
+		else System.out.println(result);
 	}
 }
