@@ -26,7 +26,6 @@ public class Main07 {
 			boolean[] arr = new boolean[26];
 			for(int j=0;j<s.length();j++) {
 				int now = s.charAt(j)-'a';
-				
 				if(now != next) {
 					if(arr[now]) {
 						b =false;
