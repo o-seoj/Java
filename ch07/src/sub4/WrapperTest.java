@@ -56,7 +56,7 @@ public class WrapperTest {
 		System.out.println("s3 : "+s3);
 		
 		// Wrapper -> 기본타입 변환	
-		int v1 = w1; // auto un-boxing
+		int v1 = w1; // auto un-boxing int v1=w1.intValue() 나 Integer.valueOf(1)
 		double v2 = w2;
 		boolean v3 = w3;
 		
