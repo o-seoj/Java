@@ -31,6 +31,7 @@ class Score{
 		}else {
 			System.out.println("점수가 이상 없습니다.");
 		}
+
 	}
 }
 public class ThrowTest {
