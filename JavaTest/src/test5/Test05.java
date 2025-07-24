@@ -30,7 +30,7 @@ class Banana{
 
 	@Override
 	public String toString() {
-		return "Apple [country=" + country + ", price=" + price + "]";
+		return "Banana [country=" + country + ", price=" + price + "]";
 	}
 	
 }
@@ -46,7 +46,7 @@ class Grape{
 
 	@Override
 	public String toString() {
-		return "Apple [country=" + country + ", price=" + price + "]";
+		return "Grape [country=" + country + ", price=" + price + "]";
 	}
 	
 	

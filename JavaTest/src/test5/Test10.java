@@ -19,7 +19,7 @@ public class Test10 {
 			FileWriter fw = new FileWriter(file);
 			
 			for(int x=2; x<=9; x++) {
-				fw.write(x);
+				fw.write(x+"단\n");
 				
 			for(int y=1; y<=9; y++) {
 				int z = x*y;

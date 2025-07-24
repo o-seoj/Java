@@ -34,7 +34,7 @@ public class Test03 {
 			}else {
 				System.out.println("로그인 성공!");
 			}
-		} catch (Exception e) {
+		} catch (LoginException e) {
 			System.out.println(e.getMessage());
 		}
 	}

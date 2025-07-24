@@ -27,10 +27,10 @@ public class Test01 {
 				}
 			} catch(InputMismatchException e) {
 				System.out.println("숫자를 입력하세요.");
-				e.printStackTrace();
+				continue;
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
-				e.printStackTrace();
+				continue;
 			}
 			
 			if(answer>input) {

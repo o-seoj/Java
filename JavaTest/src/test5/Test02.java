@@ -31,15 +31,17 @@ public class Test02 {
 		System.out.print("찾을 숫자 입력 : ");
 		int find = sc.nextInt();
 		
-		try {
-			searchArray(find,arr);
-			System.out.println("입력한 숫자를 찾았습니다!");
+			try {
+				searchArray(find,arr);
+				System.out.println("입력한 숫자를 찾았습니다!");
+			} catch (NotFoundException e) {
+				System.out.println(e.getMessage());
+			}finally {
+				sc.close();
+			}
+		
 			
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}finally {
-			sc.close();
-		}
+		
 		System.out.println("프로그램 종료...");
 	}
 }

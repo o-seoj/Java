@@ -16,14 +16,14 @@ public class Test07 {
 		}
 	}
 	
-	public static Set makeLotto() {
+	public static Set<Integer> makeLotto() {
 		Set<Integer> lottoSet = new HashSet();
 		
 		for(;;) {
 			int num = (int) Math.ceil(Math.random()*46);
 			lottoSet.add(num);
 			
-			if(lottoSet.size()>6) {
+			if(lottoSet.size()==6) {
 				break;
 			}
 			
